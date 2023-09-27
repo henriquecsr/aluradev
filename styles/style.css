@@ -29,10 +29,23 @@ textarea {
 .code-frame {
     background-color: #141414;
     border-radius: 8px;
-    padding: 3.1rem 1rem 1rem;
+    padding: 0.7rem 1rem 1rem;
 }
 
 .container-code {
     height: 60vh;
+    margin-top: 0.2rem;
 }
 
+.editor-highlight {
+    padding: 3%;
+}
+
+.highlight-button {
+    background-color: #5081FB14;
+    color: #FFFFFF;
+    border-style: none;
+    border-radius: 8px;
+    width: 100%;
+    padding: 1rem;
+}
