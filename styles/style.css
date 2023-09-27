@@ -1,5 +1,38 @@
-body {
+ body {
     background-color: #051D3B;
     margin: 0;
     padding: 0;
 }
+
+textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;	
+    resize: none;
+    height: 100%;
+    width: 100%
+}
+
+#code-block {
+    background: #141414;
+    color: #FFFFFF;
+    border-style: none;
+}
+
+.editor-border {
+    background-color: #6BD1FF;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 5% 3%;
+}
+
+.code-frame {
+    background-color: #141414;
+    border-radius: 8px;
+    padding: 3.1rem 1rem 1rem;
+}
+
+.container-code {
+    height: 60vh;
+}
+
