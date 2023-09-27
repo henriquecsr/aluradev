@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 5%;
 }
 
 .navbar-nav {
@@ -15,6 +16,6 @@
     padding: 1rem;
 }
 
-.nav-item {
+.nav-link {
     padding: 1rem;
 }
