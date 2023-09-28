@@ -62,13 +62,26 @@
             <button class="highlight-button">Vizualizar com o highlight</button>
         </div>
 
-        <div class="project-info">
-            <label for="project" class="project-label flex-gap">Seu projeto</label>
-            <div>
-                <input class="flex-gap" type="text" name="project-title" id="project-title" placeholder="Nome do seu projeto">
-                <textarea class="flex-gap" name="project-desc" id="project-desc" placeholder="Descrição do seu projeto"></textarea>
+            <div class="project-info">
+                <label for="project" class="project-label flex-gap">Seu projeto</label>
+                <div>
+                    <input class="flex-gap" type="text" name="project-title" id="project-title" placeholder="Nome do seu projeto">
+                    <textarea class="flex-gap" name="project-desc" id="project-desc" placeholder="Descrição do seu projeto"></textarea>
+                </div>
             </div>
-        </div>
+
+            <div class="customization-container">
+                <label for="editor-settings" class="customization-label">Personalização</label>
+                <div class="language-input">
+                    <select name="languages" id="languages">
+                        <option class="lang-value" value="Javascript">Javascript</option>
+                        <option class="lang-value" value="HTML">HTML</option>
+                        <option class="lang-value" value="CSS">CSS</option>
+                    </select>
+                </div>
+                <input class="color-input" type="color" name="codespace" id="frame-color" value="#6BD1FF">
+            </div>
+        
     </main>
 
 </body>
