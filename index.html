@@ -1,94 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/navbar.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
     <title>AluraDev</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <nav class="navbar">
-        <div class="container-nav">
+      <div class="container-nav">
+        <img src="images/Logo.svg" alt="AluraDev" class="logo-img" />
 
-            <img src="images/Logo.svg" alt="AluraDev" class="logo-img">
+        <div class="nav-items">
+          <ul class="navbar-nav">
+            <li class="nav-link">
+              <a href="" class="search">
+                <img src="images/Search.svg" alt="Search" class="search-img" />
+              </a>
+            </li>
 
-            <div class="nav-items">
-                <ul class="navbar-nav">
-
-                    <li class="nav-link">
-                        <a href="" class="search">
-                            <img src="images/Search.svg" alt="Search" class="search-img">
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="" class="menu">
-                            <img src="images/Menu.svg" alt="" class="menu-icon">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
+            <li class="nav-link">
+              <a href="" class="menu">
+                <img src="images/Menu.svg" alt="" class="menu-icon" />
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
-    <main class="">
-        <div class="editor-border">
-            <div class="code-frame">
-                <img src="images/mac_buttons.svg" alt="">
-                <div class="container-code">
-                    <textarea name="" id="code-block">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+    <main>
+      <div class="colored-border">
+        <div class="editor-frame">
+          <img src="images/mac_buttons.svg" alt="mac buttons image" />
+          <div class="code-container">
+            <textarea name="" id="code-block">
+const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
-                        const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-                        
-                        const unfold = (f, seed) => {
-                        
-                        const go = (f, seed, acc) => {
-                                                    const res = f(seed)
-                        
-                        return res ? go(f, res[1], acc.concat([res[0]])) : acc
-                          }
-                        return go(f, seed, [])
-                        }</textarea>
-                </div>
-            </div>
+                            const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                            
+                            const unfold = (f, seed) => {
+                            
+                            const go = (f, seed, acc) => {
+                                                        const res = f(seed)
+                            
+                            return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                            }
+                            return go(f, seed, [])
+                            }</textarea
+            >
+          </div>
         </div>
+      </div>
 
-        <div class="editor-highlight">
-            <button class="highlight-button">Vizualizar com o highlight</button>
+      <button class="highlight-btn">Visualizar com o highlight</button>
+
+      <div class="info-container">
+        <label for="project" class="project-label margin-gap"
+          >Seu projeto</label
+        >
+        <div>
+          <input
+            class="project-title margin-gap"
+            type="text"
+            name="project-title"
+            id="project-title"
+            placeholder="Nome do seu projeto"
+          />
+          <textarea
+            class="project-desc margin-gap"
+            name="project-desc"
+            id="project-desc"
+            placeholder="Descrição do seu projeto"
+          ></textarea>
         </div>
+      </div>
 
-            <div class="project-info">
-                <label for="project" class="project-label flex-gap">Seu projeto</label>
-                <div>
-                    <input class="flex-gap" type="text" name="project-title" id="project-title" placeholder="Nome do seu projeto">
-                    <textarea class="flex-gap" name="project-desc" id="project-desc" placeholder="Descrição do seu projeto"></textarea>
-                </div>
-            </div>
+      <div class="customization-container">
+        <label for="editor-settings" class="customization-label margin-gap"
+          >Personalização</label
+        >
+        <select
+          class="language-selector margin-gap"
+          name="languages"
+          id="language-selector"
+        >
+          <option class="lang-value" value="Javascript">Javascript</option>
+          <option class="lang-value" value="HTML">HTML</option>
+          <option class="lang-value" value="CSS">CSS</option>
+        </select>
 
-            <div class="customization-container">
-                <label for="editor-settings" class="customization-label">Personalização</label>
-                <div class="language-input">
-                    <select name="languages" id="languages">
-                        <option class="lang-value" value="Javascript">Javascript</option>
-                        <option class="lang-value" value="HTML">HTML</option>
-                        <option class="lang-value" value="CSS">CSS</option>
-                    </select>
-                </div>
+        <div class="color-picker-border margin-gap">
+          <input
+            class="color-input"
+            type="color"
+            name="code-colored-frame"
+            id="frame-color"
+            value="#6BD1FF"
+          />
+        </div>
+      </div>
 
-                <div class="color-border">
-                    <input class="color-input" type="color" name="codespace" id="frame-color" value="#6BD1FF">
-                </div>
-            </div>
-            <div class="save-container">
-                <button class="save-button" type="submit">Salvar projeto</button>
-            </div>
-
+      <button class="save-btn" type="submit">Salvar projeto</button>
     </main>
-
-</body>
+  </body>
 </html>
