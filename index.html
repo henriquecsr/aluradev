@@ -4,19 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/navbar.css"/>
-    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/menu.css" />
     <title>AluraDev</title>
   </head>
 
   <body>
     <nav class="navbar">
       <div class="container-nav">
-
         <div class="search-container">
-          <input type="text" name="search-bar" id="search-bar" placeholder="Busque por algo">
+          <input
+            type="text"
+            name="search-bar"
+            id="search-bar"
+            placeholder="Busque por algo"
+          />
 
-          <img class="close-btn" src="images/close_btn.svg" alt="Close">
+          <img class="close-btn" src="images/close_btn.svg" alt="Close" />
         </div>
 
         <img src="images/Logo.svg" alt="AluraDev" class="logo-img" />
@@ -40,10 +44,21 @@
     </nav>
 
     <main>
-
       <div class="menu-container">
-          <a class="menu-link" href="index.html"><i class="menu-icon code-editor-icon fa-solid fa-code"></i>Editor de códigos</a>
-          <a class="menu-link" href="community.html"><i class="menu-icon community-icon fa-solid fa-users"></i>Comunidade</a>
+        <a class="menu-link" href="index.html"
+          ><i class="menu-icon code-editor-icon fa-solid fa-code"></i>Editor de
+          códigos</a
+        >
+        <a class="menu-link" href="community.html"
+          ><i class="menu-icon community-icon fa-solid fa-users"></i
+          >Comunidade</a
+        >
+
+        <div class="menu-divider"></div>
+
+        <a class="account-link" href=""
+          ><img class="user-img" src="images/Photo.svg" alt="" />Harry</a
+        >
       </div>
 
       <div class="colored-border">
@@ -120,6 +135,9 @@ const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key]
       <button class="save-btn" type="submit">Salvar projeto</button>
     </main>
 
-    <script src="https://kit.fontawesome.com/a8b6aca753.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/a8b6aca753.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
