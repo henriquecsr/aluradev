@@ -1,5 +1,9 @@
 @import url("style.css");
 
+nav {
+    margin: 0 3%;
+}
+
 #search-bar {
   background: var(--color-two);
   color: var(--color-one);
@@ -46,3 +50,25 @@
 .close-btn {
   padding-left: 1rem;
 }
+
+@media screen and (min-width: 768px) {
+
+    #search-bar {
+        margin-bottom: 0.5rem;
+    }
+
+    .search-img,
+    .close-btn {
+      display: none;
+    }
+
+    .search-container {
+        display: flex;
+    }
+
+    .logo-img,
+    .nav-link {
+         padding: 1rem 0;
+    }
+
+  }

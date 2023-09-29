@@ -12,6 +12,8 @@
   <body>
     <nav class="navbar">
       <div class="container-nav">
+        <img src="images/Logo.svg" alt="AluraDev" class="logo-img" />
+
         <div class="search-container">
           <input
             type="text"
@@ -22,8 +24,6 @@
 
           <img class="close-btn" src="images/close_btn.svg" alt="Close" />
         </div>
-
-        <img src="images/Logo.svg" alt="AluraDev" class="logo-img" />
 
         <div class="nav-items">
           <ul class="navbar-nav">
@@ -111,24 +111,26 @@ const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key]
         <label for="language-selector" class="customization-label margin-gap"
           >Personalização</label
         >
-        <select
-          class="language-selector margin-gap"
-          name="languages"
-          id="language-selector"
-        >
-          <option class="lang-value" value="Javascript">Javascript</option>
-          <option class="lang-value" value="HTML">HTML</option>
-          <option class="lang-value" value="CSS">CSS</option>
-        </select>
+        <div class="input-container">
+          <select
+            class="language-selector margin-gap"
+            name="languages"
+            id="language-selector"
+          >
+            <option class="lang-value" value="Javascript">Javascript</option>
+            <option class="lang-value" value="HTML">HTML</option>
+            <option class="lang-value" value="CSS">CSS</option>
+          </select>
 
-        <div class="color-picker-border margin-gap">
-          <input
-            class="color-input"
-            type="color"
-            name="code-colored-frame"
-            id="frame-color"
-            value="#6BD1FF"
-          />
+          <div class="color-picker-border margin-gap">
+            <input
+              class="color-input"
+              type="color"
+              name="code-colored-frame"
+              id="frame-color"
+              value="#6BD1FF"
+            />
+          </div>
         </div>
       </div>
 

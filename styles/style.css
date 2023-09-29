@@ -77,11 +77,10 @@ textarea {
 
 #frame-color {
   background-color: transparent;
-  height: 2.5rem;
+  height: 3rem;
 }
 
-#frame-color::-webkit-color-swatch,
-#frame-color::-moz-color-swatch {
+#frame-color::-webkit-color-swatch {
   border-radius: 6px;
 }
 
@@ -154,4 +153,21 @@ textarea {
 .save-btn {
   background-color: var(--color-six);
   height: 3.5rem;
+}
+
+@media screen and (min-width: 768px) {
+
+  .input-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .language-selector,
+  .color-picker-border {
+    width: 49%;
+  }
+
+  div.color-picker-border {
+    padding: 0;
+  }
 }

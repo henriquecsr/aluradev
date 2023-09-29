@@ -17,7 +17,7 @@ a.menu-link {
   width: 80vw;
   left: 18%;
   padding: 1.5rem;
-  /* display: none; */
+  display: none;
 }
 
 .menu-icon {
@@ -42,4 +42,11 @@ a.menu-link {
 .menu-divider {
   border-top: 2px solid #ffffff10;
   margin: 0.5rem 0 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .menu-container {
+        width: 40vw;
+        left: 58%;
+    }
 }
