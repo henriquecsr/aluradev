@@ -1,0 +1,28 @@
+@import url("style.css");
+
+a.menu-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: #FFFFFF56;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #2D415B;
+    border-radius: 8px;
+    height: 100vh;
+    width: 80vw;
+    left: 18%;
+    padding: 1.5rem;
+    display: none;
+}
+
+.menu-icon {
+    background-color: #5081FB29;
+    border-radius: 16px;
+    padding: 1rem 0.87rem;
+    margin-right: 1rem;
+}

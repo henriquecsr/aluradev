@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/navbar.css"/>
+    <link rel="stylesheet" href="styles/menu.css">
     <title>AluraDev</title>
   </head>
 
@@ -30,7 +31,7 @@
 
             <li class="nav-link">
               <a href="" class="menu">
-                <img src="images/Menu.svg" alt="" class="menu-icon" />
+                <img src="images/Menu.svg" alt="" class="hamburguer-icon" />
               </a>
             </li>
           </ul>
@@ -39,6 +40,12 @@
     </nav>
 
     <main>
+
+      <div class="menu-container">
+          <a class="menu-link" href="index.html"><i class="menu-icon code-editor-icon fa-solid fa-code"></i>Editor de códigos</a>
+          <a class="menu-link" href="community.html"><i class="menu-icon community-icon fa-solid fa-users"></i>Comunidade</a>
+      </div>
+
       <div class="colored-border">
         <div class="editor-frame">
           <img src="images/mac_buttons.svg" alt="mac buttons image" />
@@ -112,5 +119,7 @@ const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key]
 
       <button class="save-btn" type="submit">Salvar projeto</button>
     </main>
+
+    <script src="https://kit.fontawesome.com/a8b6aca753.js" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -30,6 +30,10 @@
     /* display: none; */
 }
 
+.search-img {
+    padding-top: 0.15rem;
+}
+
 .search-container {
     display: flex;
     justify-content: space-between;
