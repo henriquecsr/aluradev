@@ -1,8 +1,16 @@
+@import url("style.css");
+
+#search-bar {
+    background: var(--color-two);
+    color: var(--color-one);
+    padding: 1rem;
+}
+
 .container-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 0.7rem;
 }
 
 .navbar-nav {
@@ -12,10 +20,25 @@
     padding: 0;
 }
 
-.logo-img {
+.logo-img,
+.nav-link {
     padding: 1rem;
 }
 
-.nav-link {
-    padding: 1rem;
+.nav-items,
+.logo-img {
+    /* display: none; */
+}
+
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0.7rem;
+    padding: 0 5%;
+    display: none;
+}
+
+.close-btn {
+    padding-left: 1rem;
 }

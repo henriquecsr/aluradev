@@ -73,7 +73,8 @@ textarea {
   height: 2.5rem;
 }
 
-#frame-color::-webkit-color-swatch {
+#frame-color::-webkit-color-swatch,
+#frame-color::-moz-color-swatch {
   border-radius: 6px;
 }
 

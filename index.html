@@ -11,6 +11,13 @@
   <body>
     <nav class="navbar">
       <div class="container-nav">
+
+        <div class="search-container">
+          <input type="text" name="search-bar" id="search-bar" placeholder="Busque por algo">
+
+          <img class="close-btn" src="images/close_btn.svg" alt="Close">
+        </div>
+
         <img src="images/Logo.svg" alt="AluraDev" class="logo-img" />
 
         <div class="nav-items">
@@ -58,7 +65,7 @@ const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key]
       <button class="highlight-btn">Visualizar com o highlight</button>
 
       <div class="info-container">
-        <label for="project" class="project-label margin-gap"
+        <label for="project-title" class="project-label margin-gap"
           >Seu projeto</label
         >
         <div>
@@ -79,7 +86,7 @@ const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key]
       </div>
 
       <div class="customization-container">
-        <label for="editor-settings" class="customization-label margin-gap"
+        <label for="language-selector" class="customization-label margin-gap"
           >Personalização</label
         >
         <select
