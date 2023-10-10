@@ -27,8 +27,8 @@
 
         <div class="desktop-account-container">
           <a class="desktop-account-link" href=""
-          ><img class="user-img" src="images/Photo.svg" alt="" />Harry</a
-        >
+            ><img class="user-img" src="images/Photo.svg" alt="" />Harry</a
+          >
         </div>
 
         <div class="nav-items">
@@ -67,6 +67,18 @@
         >
       </div>
 
+      <div class="desktop-menu-container">
+        <a class="menu-link" href="index.html"
+          ><i class="menu-icon code-editor-icon fa-solid fa-code"></i>Editor de
+          códigos</a
+        >
+        <a class="menu-link" href="community.html"
+          ><i class="menu-icon community-icon fa-solid fa-users"></i
+          >Comunidade</a
+        >
+      </div>
+
+      <div class="code-editor-container">
       <div class="colored-border">
         <div class="editor-frame">
           <img src="images/mac_buttons.svg" alt="mac buttons image" />
@@ -91,56 +103,59 @@ const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key]
       </div>
 
       <button class="highlight-btn">Visualizar com o highlight</button>
+    </div>
 
-      <div class="info-container">
-        <label for="project-title" class="project-label margin-gap"
-          >Seu projeto</label
-        >
-        <div>
-          <input
-            class="project-title margin-gap"
-            type="text"
-            name="project-title"
-            id="project-title"
-            placeholder="Nome do seu projeto"
-          />
-          <textarea
-            class="project-desc margin-gap"
-            name="project-desc"
-            id="project-desc"
-            placeholder="Descrição do seu projeto"
-          ></textarea>
-        </div>
-      </div>
-
-      <div class="customization-container">
-        <label for="language-selector" class="customization-label margin-gap"
-          >Personalização</label
-        >
-        <div class="input-container">
-          <select
-            class="language-selector margin-gap"
-            name="languages"
-            id="language-selector"
+      <div class="project-container">
+        <div class="info-container">
+          <label for="project-title" class="project-label margin-gap"
+            >Seu projeto</label
           >
-            <option class="lang-value" value="Javascript">Javascript</option>
-            <option class="lang-value" value="HTML">HTML</option>
-            <option class="lang-value" value="CSS">CSS</option>
-          </select>
-
-          <div class="color-picker-border margin-gap">
+          <div>
             <input
-              class="color-input"
-              type="color"
-              name="code-colored-frame"
-              id="frame-color"
-              value="#6BD1FF"
+              class="project-title margin-gap"
+              type="text"
+              name="project-title"
+              id="project-title"
+              placeholder="Nome do seu projeto"
             />
+            <textarea
+              class="project-desc margin-gap"
+              name="project-desc"
+              id="project-desc"
+              placeholder="Descrição do seu projeto"
+            ></textarea>
           </div>
         </div>
-      </div>
 
-      <button class="save-btn" type="submit">Salvar projeto</button>
+        <div class="customization-container">
+          <label for="language-selector" class="customization-label margin-gap"
+            >Personalização</label
+          >
+          <div class="input-container">
+            <select
+              class="language-selector margin-gap"
+              name="languages"
+              id="language-selector"
+            >
+              <option class="lang-value" value="Javascript">Javascript</option>
+              <option class="lang-value" value="HTML">HTML</option>
+              <option class="lang-value" value="CSS">CSS</option>
+            </select>
+
+            <div class="color-picker-border margin-gap">
+              <input
+                class="color-input"
+                type="color"
+                name="code-colored-frame"
+                id="frame-color"
+                value="#6BD1FF"
+              />
+            </div>
+          </div>
+        </div>
+
+        <button class="save-btn" type="submit">Salvar projeto</button>
+      </div>
     </main>
 
     <script

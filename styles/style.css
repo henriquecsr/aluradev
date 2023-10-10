@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap");
+@import url("menu.css");
 
 :root {
   --bg-color: #051d3b;
@@ -155,6 +156,10 @@ textarea {
   height: 3.5rem;
 }
 
+  .desktop-menu-container {
+    display: none;
+  }
+
 @media screen and (min-width: 768px) {
 
   .input-container {
@@ -169,5 +174,37 @@ textarea {
 
   div.color-picker-border {
     padding: 0;
+  }
+}
+
+@media screen and (min-width: 1278px) {
+  main {
+    display: grid;
+    grid-template-areas: 
+    "nav-menu code-editor project";
+    gap: 3%;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+
+  .desktop-menu-container {
+    display: block;
+    grid-area: nav-menu;
+  }
+
+  .code-editor-container {
+    grid-area: code-editor;
+  }
+
+  .project-container {
+    grid-area: project;
+  }
+
+  .input-container {
+    display: block;
+  }
+
+  .language-selector,
+  .color-picker-border {
+    width: 100%;
   }
 }
